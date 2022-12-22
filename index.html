@@ -11,21 +11,22 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="header__container _container">
-                <nav class="header__menu menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="" class="menu__link">Что нового</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__link">Цвет</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__link">Заказать</a>
-                        </li>
-                    </ul>
-                </nav>
+        <header id="open" class="header">
+            <div id="close" class="header__container _container">
+                <div class="header__button">
+                    <a href="#open" class="icon-menu"><span></span></a>
+                    <a href="#close" class="close-icon-menu"></a>
+                </div>
+
+                <div class="header__menu menu">
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="" class="menu__link">Что нового</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Цвет</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Заказать</a></li>
+                        </ul>
+                    </nav>
+                </div>
 
                 <a href="#" class="header__logo">
                     <img src="./img/header/logo.svg" alt="logo">
@@ -46,7 +47,7 @@
                         </h1>
 
                         <div class="main-block__image _ibg">
-                            <img src="./img/main/iphone_14_pro.jpg" alt="iPhone14ProMax">
+                            <img src="./img/main/iphone_14_pro.png" alt="iPhone14ProMax">
                         </div>
 
                         <div class="main-block__buttons">
