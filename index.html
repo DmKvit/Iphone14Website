@@ -8,9 +8,15 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
+
+    <script src="https://kit.fontawesome.com/8ec1148cdb.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="wrapper">
+        <div class="arrow-up">
+            <a class="arrow-up__link" href="#"><i class="fas fa-arrow-up"></i></i></a>
+        </div>
+
         <header id="open" class="header">
             <div id="close" class="header__container _container">
                 <div class="header__button">
@@ -21,9 +27,9 @@
                 <div class="header__menu menu">
                     <nav class="menu__body">
                         <ul class="menu__list">
-                            <li class="menu__item"><a href="" class="menu__link">Что нового</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Цвет</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Заказать</a></li>
+                            <li class="menu__item"><a href="#new" class="menu__link">Что нового</a></li>
+                            <li class="menu__item"><a href="#color" class="menu__link">Цвет</a></li>
+                            <li class="menu__item"><a href="#feedback" class="menu__link">Заказать</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -59,7 +65,7 @@
                 </div>
             </section>
 
-            <section class="page__new new">
+            <section id="new" class="page__new new">
                 <div class="new__container _container">
                     <div class="new__body">
                         <h2 class="new__title">
@@ -95,7 +101,7 @@
                 </div>
             </section>
 
-            <section class="page__color color">
+            <section id="color" class="page__color color">
                 <div class="color__container _container">
                     <h2 class="color__title">
                         Выбери свой цвет
@@ -149,7 +155,7 @@
                 </div>
             </section>
 
-            <section class="page__feedback feedback">
+            <section id="feedback" class="page__feedback feedback">
                 <div class="feedback__container _container">
                     <div class="feedback__body">
                         <div class="feedback__content">

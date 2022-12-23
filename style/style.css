@@ -31,11 +31,12 @@ html,
 body {
 	height: 100%;
 	line-height: 121%;
-	background: #fff;
+	background: #ffffff;
 	font-size: 24px;
 	color: #252b42;
 	font-weight: 400;
 	font-family: Inter;
+    scroll-behavior: smooth;
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -65,6 +66,28 @@ body {
     top: 0;
     left: 0;
     object-fit: cover;
+}
+
+/* ---Arrow------------------------------------------------------------------------- */
+.arrow-up {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    z-index: 5;
+}
+.arrow-up__link {
+    width: 50px;
+    height: 50px;
+    background-color: #574b63;
+    text-align: center;
+    display: block;
+    line-height: 50px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: ease .5s;
+}
+.arrow-up__link:hover {
+    background-color: #490e84;
 }
 
 /* ---Header------------------------------------------------------------------------- */
@@ -125,6 +148,11 @@ body {
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 1s;
+}
+@media (max-width: 1024px) {
+    .menu__item:not(:last-child) {
+        padding: 0px 15px 0px 0px;
+    }
 }
 @media (max-width: 768px) {
     .menu__body {
@@ -348,8 +376,15 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
-    color: #fff;
+    color: #ffffff;
     background-color: #490e84;
+    transition: all 1s ease 0s;
+}
+.main-block__button:focus,
+.main-block__button:hover {
+    color: #490e84;
+    background-color: rgb(219, 199, 199);
+    cursor: pointer;
 }
 @media (max-width: 425px) {
     .main-block__button {
@@ -518,6 +553,13 @@ body {
 .item__color-image {
     margin: 0px 0px 20px 0px;
 }
+.item__color-image img {
+    transition: all .5s ease 0s;
+}
+.item__color-image:hover img {
+    transform: scale(1.1);
+    transition: all .5s ease 0s;
+}
 @media (max-width: 425px) {
     .item__color-image {
         margin: 0px 0px 10px 0px;
@@ -573,7 +615,7 @@ body {
     font-weight: 700;
     font-size: 32px;
     line-height: 120%;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 @media (max-width: 810px) {
 	.feedback__title {
@@ -619,18 +661,25 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 0.5;
 }
 .feedback__button {
     padding: 16px 81px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 30px;
     font-weight: 700;
     font-size: 14px;
     line-height: 130%;
     text-transform: uppercase;
-    color: #490E84;
+    color: #490e84;
+    transition: all 1s ease 0s;
+}
+.feedback__button:focus,
+.feedback__button:hover {
+    color: #490e84;
+    background-color: rgb(219, 199, 199);
+    cursor: pointer;
 }
 @media (max-width: 768px) {
 	.feedback__button {
